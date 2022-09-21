@@ -8,8 +8,7 @@ services:
     env_file:
       - /.env
   web:
-    build:
-      context: https://hub.docker.com/repository/docker/nstsa/yamdb
+    image: nstsa/yamdb:latest
     restart: always
     volumes:
       - static_value:/app/api_yamdb/static/
