@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: nstsa/yamdb:v.1.1
+          tags: nstsa/yamdb:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
