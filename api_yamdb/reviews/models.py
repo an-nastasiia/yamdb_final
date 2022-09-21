@@ -1,9 +1,9 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
-
-from .validators import validate_year
 from users.models import User
+
 from .abstract_models import PubDateModel
+from .validators import validate_year
 
 
 class Genre(models.Model):

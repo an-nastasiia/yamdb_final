@@ -9,10 +9,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
-
+from reviews.customfilters import TitleFilter
 from reviews.models import Categories, Genre, Review, Title
 from users.models import User
-from reviews.customfilters import TitleFilter
+
 from .customviewset import CreateListDelViewCatGenSet
 from .mail_templates import send_confirm_mail
 from .permissions import IsAdmin, IsAdminOnly, IsAuthorOrModeratorOrAdmin

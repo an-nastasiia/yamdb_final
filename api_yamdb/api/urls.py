@@ -5,7 +5,6 @@ from .views import (CategoriesViewSet, CommentViewSet, GenresViewSet,
                     GetJWTTokenAPIView, ReviewViewSet, SignUpAPIView,
                     TitleViewSet, UsersViewSet)
 
-
 API_V1 = 'v1/'
 
 app_name = 'api'

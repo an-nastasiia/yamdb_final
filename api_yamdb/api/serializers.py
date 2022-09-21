@@ -2,9 +2,9 @@ from django.contrib.auth.tokens import default_token_generator
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
-
 from reviews.models import (Categories, Comment, Genre, GenreTitle, Review,
                             Title, User)
+
 from .current_default_classes import CurrentReviewDefault, CurrentTitleDefault
 
 
