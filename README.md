@@ -1,5 +1,7 @@
 ![YaMDb workflow](https://github.com/an-nastasiia/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+*Готовый проект доступен по [**ссылке**](http://158.160.10.58/)*
+
 # YaMDB
 
 ## Что такое YaMDb:
