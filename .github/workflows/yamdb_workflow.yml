@@ -67,7 +67,7 @@ jobs:
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
           sudo docker-compose up -d
           export container_id=$(sudo docker ps -aqf name=web)
-          sudo docker cp /home/cloud-anti-na13/redoc.yaml $container_id:app/api_yamdb/static/redoc.yaml
+          sudo docker-compose exec web mv redoc.yaml /api_yamdb/static/redoc.yaml
   send_message:
     runs-on: ubuntu-latest
     needs: deploy
